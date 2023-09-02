@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap&display=swap&family=Yeseva+One&display=swap');
 @tailwind base;
 @layer base {
-  html{
-    font-family: 'Noto Sans TC', 'sans-serif';
+  *, ::before, ::after{
+    @apply border-black
   }
   body{
+    font-family: 'Yeseva One','Noto Serif TC', 'sans-serif';
     background: #F3F1E5;
+    color:#030303;
   }
   
 }

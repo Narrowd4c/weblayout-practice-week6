@@ -1,9 +1,15 @@
 <script setup lang="ts">
-//import TheWelcome from '../components/TheWelcome.vue'
+import CategoryComp from '../components/CategoryComp.vue'
+import EventsComp from '../components/EventsComp.vue'
 </script>
 
 <template>
-  <main>
-    
-  </main>
+  <div class="container">
+    <CategoryComp></CategoryComp>
+    <EventsComp></EventsComp>
+  </div>
 </template>
+
+<style>
+
+</style>

@@ -12,11 +12,8 @@ export default {
       lg: '996px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: '1280px',
+      xl: '1320px'
       // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px'
-      // => @media (min-width: 1536px) { ... }
     },
     container: {
       center: true,
@@ -25,18 +22,24 @@ export default {
         sm: '640px',
         md: '768px',
         lg: '996px',
-        xl: '1280px',
-        '2xl': '1440px'
+        xl: '1320px'
       }
     },
     extend: {
-      color: {},
+      colors: {
+        primary: '#FBFF22',
+        secondary: '#C96464'
+      },
       fontFamily: {
         yeseva: ["'Yeseva One'", 'cursive'],
         noto: ["'Noto Sans TC'", "'sans-serif'"]
       },
       fontSize: {
-        8: '2rem'
+        '3xl': '2rem',
+        '6xl': '4rem'
+      },
+      borderWidth: {
+        3: '3px'
       }
     }
   },
