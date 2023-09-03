@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import HomeTitle from './HomeTitle.vue'
+import RightArrow from './RightArrow.vue';
 const events = ref([
   {
     date: '19 MAY 2023',
@@ -59,13 +60,8 @@ const events = ref([
 ])
 </script>
 <template>
-  <div
-    class="border-3 container mb-6 mt-8 flex items-center px-3 py-4 md:mb-8 md:mt-12 md:px-8 md:py-6"
-  >
-    <h2 class="text-2xl lg:text-6xl">RECENT</h2>
-    <p class="ms-auto font-bold lg:text-3xl">近期活動</p>
-  </div>
-  <ul class="-mx-3 flex flex-wrap lg:mb-[60px] gap-y-6 lg:gap-y-12">
+  <HomeTitle :title="'RECENT'" :subtitle="'近期活動'"></HomeTitle>   
+  <ul class="-mx-3 flex flex-wrap lg:mb-15 gap-y-6 lg:gap-y-12">
     <li
       v-for="{ date, title, img, tag, article, status } in events"
       class="px-3 md:w-1/2 xl:w-1/3"
@@ -86,8 +82,7 @@ const events = ref([
           />
           <p class="">{{ tag }}</p>
           <a class="ms-auto flex items-center gap-x-1"
-            >{{ status }}<img src="../assets/icons/rounded-double-right1.svg" alt=""
-          /></a>
+            >{{ status }}<RightArrow :width="16" :color="'black'"></RightArrow></a>
         </div>
       </div>
     </li>
