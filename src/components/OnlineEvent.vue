@@ -14,7 +14,7 @@ const tags = ref(['競賽', '科技', '有趣'])
     <div class="w-full md:w-1/2">
       <h3 class="mb-2 md:mb-4  text-lg md:text-3xl font-bold">切特居批踢</h3>
       <ul class="flex gap-x-2">
-        <li v-for="tag in tags" :key="tag" class="text-sm md:text-base font-bolder border border-l-4 px-4 md:px-6 py-1">
+        <li v-for="tag in tags" :key="tag" class="text-sm md:text-base font-bold border border-l-4 px-4 md:px-6 py-1">
           {{ tag }}
         </li>
       </ul>
@@ -26,7 +26,7 @@ const tags = ref(['競賽', '科技', '有趣'])
       </article>
       <a
         href="#"
-        class="font-bolder flex items-center justify-center bg-black py-4 md:py-2 font-noto md:text-xl/5  text-white"
+        class="font-bold flex items-center justify-center bg-black py-4 md:py-2 font-noto md:text-xl/5  text-white"
         ><p class="me-1">查看活動詳情</p>
         <RightArrow :width="20" :color="'white'"
       /></a>

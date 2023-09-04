@@ -2,7 +2,7 @@
 import CategoryComp from '../components/CategoryComp.vue'
 import EventsComp from '../components/EventsComp.vue'
 import OnlineEvent from '../components/OnlineEvent.vue'
-
+import AlbumsComp from '@/components/AlbumsComp.vue';
 </script>
 
 <template>
@@ -11,6 +11,7 @@ import OnlineEvent from '../components/OnlineEvent.vue'
     <EventsComp></EventsComp>
     <OnlineEvent></OnlineEvent>
   </div>
+  <AlbumsComp></AlbumsComp> 
 </template>
 
 <style>
