@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import HomeTitle from './HomeTitle.vue'
-import RightArrow from './RightArrow.vue';
+import RightArrow from './RightArrow.vue'
 const events = ref([
   {
     date: '19 MAY 2023',
@@ -60,18 +60,24 @@ const events = ref([
 ])
 </script>
 <template>
-  <HomeTitle :title="'RECENT'" :subtitle="'近期活動'"></HomeTitle>   
-  <ul class="-mx-3 flex flex-wrap lg:mb-15 gap-y-6 lg:gap-y-12">
+  <HomeTitle :title="'RECENT'" :subtitle="'近期活動'"></HomeTitle>
+  <ul class="lg:mb-15 -mx-3 flex flex-wrap gap-y-6 lg:gap-y-12">
     <li
       v-for="{ date, title, img, tag, article, status } in events"
       class="px-3 md:w-1/2 xl:w-1/3"
       :key="date + title"
     >
-      <div class="flex flex-col h-full">
-        <p class="text-3xl border-b-3 mb-4 pb-2 lg:mb-3 lg:pb-3 lg:text-5xl">{{ date }}</p>
-        <img class="object-cover w-full h-[210px] lg:h-[255px] mb-2 lg:mb-3" :src="img" :alt="title" />
+      <div class="group/img flex h-full flex-col">
+        <p class="border-b-3 mb-4 pb-2 text-3xl lg:mb-3 lg:pb-3 lg:text-5xl">{{ date }}</p>
+        <div class="mb-2 overflow-hidden lg:mb-3">
+          <img
+            class="h-[210px] w-full object-cover transition duration-700 ease-out group-hover/img:scale-150 lg:h-[255px]"
+            :src="img"
+            :alt="title"
+          />
+        </div>
         <h3 class="mb-2 text-lg font-bold lg:mb-3 lg:text-2xl">{{ title }}</h3>
-        <p class="font-noto mb-4 flex-1">
+        <p class="mb-4 flex-1 font-noto">
           {{ article }}
         </p>
         <div class="border-y-3 flex items-center py-[10px] font-bold lg:py-3">
@@ -80,9 +86,14 @@ const events = ref([
             src="@/assets/images/sparkler.png"
             alt="sparker"
           />
-          <p class="">{{ tag }}</p>
-          <a class="ms-auto flex items-center gap-x-1"
-            >{{ status }}<RightArrow :width="16" :color="'black'"></RightArrow></a>
+          <a href="#" class="hover:underline">{{ tag }}</a>
+          <a class="group relative ms-auto flex items-center gap-x-1"
+            >{{ status }}<RightArrow width="16" fill="black"></RightArrow>
+            <div
+              class="group-hover:bg-primary absolute left-[-10px] top-[-3.5px] z-[-1] h-[29px] w-[29px] rounded-full bg-none"
+              aria-hidden="true"
+            ></div
+          ></a>
         </div>
       </div>
     </li>

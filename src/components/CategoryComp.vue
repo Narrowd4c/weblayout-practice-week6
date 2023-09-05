@@ -33,7 +33,7 @@ const category = ref([
       </li>
       <li class="w-1/3 xl:w-1/6">
         <a
-          class="text-primary flex h-full items-center justify-center bg-black text-center text-2xl leading-tight xl:text-5xl"
+          class="text-primary border-2  flex h-full items-center justify-center bg-black text-center text-2xl leading-tight xl:text-5xl"
           href="#"
         >
           探索<br />更多

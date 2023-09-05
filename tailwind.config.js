@@ -30,8 +30,8 @@ export default {
         primary: '#FBFF22',
         secondary: '#C96464'
       },
-      margin: {
-        15:'3.75rem'
+      spacing: {
+        15: '3.75rem'
       },
       fontFamily: {
         yeseva: ["'Yeseva One'", 'cursive'],
@@ -46,5 +46,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: ['@tailwindcss/forms']
 }

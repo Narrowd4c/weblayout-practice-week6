@@ -43,10 +43,10 @@ const menuHidden = ref(true)
         class="ms-auto w-full items-center gap-6 border-t-2 px-3 py-6 font-yeseva text-[18px] md:flex md:w-min md:border-t-0 [&>*:hover]:cursor-pointer [&>*:hover]:text-[#9C9E18]"
       >
         <li class="mb-4 md:mb-0">
-          <a href="#"><i class="icofont-ui-file mr-1"></i>REGISTER</a>
+          <RouterLink to="login"><i class="icofont-ui-file mr-1"></i>REGISTER</RouterLink>
         </li>
         <li>
-          <a href="#"><i class="icofont-ui-user mr-1"></i>LOGIN</a>
+          <RouterLink to="login"><i class="icofont-ui-user mr-1"></i>LOGIN</RouterLink>
         </li>
       </ul>
     </header>

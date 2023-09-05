@@ -22,8 +22,10 @@ const albums = ref([
         :key="title"
       >
         <div class="relative border-2 font-bold">
-          <img class="h-[274px] w-full object-cover p-3 lg:p-4" :src="imgUrl" :alt="title" />
-          <h4 class="pb-8 pl-3 text-lg lg:pb-12 lg:pl-4">{{ title }}</h4>
+          <figure>
+            <img class="h-[274px] w-full object-cover p-3 lg:p-4" :src="imgUrl" :alt="title" />
+            <figcaption class="pb-8 pl-3 text-lg lg:pb-12 lg:pl-4">{{ title }}</figcaption>
+          </figure>
           <p
             class="absolute left-1/2 top-0 w-fit -translate-x-1/2 -translate-y-1/2 rotate-[-4deg] bg-white px-4 py-2 text-center"
           >
