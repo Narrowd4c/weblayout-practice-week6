@@ -4,7 +4,7 @@ import RightArrow from '@/components/RightArrow.vue'
 <template>
   <div class="container">
     <div class="mt-6 md:mt-15 mx-auto max-w-[416px]">
-      <img class="mx-auto mb-4 h-8 w-8" src="@/assets/images/sparkler.png" alt="" />
+      <img class="mx-auto mb-4 h-8 w-8" src="@/assets/images/sparkler.png" alt="logo" />
       <h1 class="mb-4 text-center text-2xl font-bold tracking-[1.2px]">會員登入</h1>
       <form class="mb-6 flex flex-col font-noto md:mb-8">
         <label class="mb-2" for="account">帳號</label>

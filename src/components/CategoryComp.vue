@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import cate01 from '@/assets/images/cate01.svg'
+import cate02 from '@/assets/images/cate02.svg'
+import cate03 from '@/assets/images/cate03.svg'
+import cate04 from '@/assets/images/cate04.svg'
+import cate05 from '@/assets/images/cate05.svg'
 
 const category = ref([
-  { img: './src/assets/images/cate01.svg', name: '演出' },
-  { img: './src/assets/images/cate02.svg', name: '聯誼' },
-  { img: './src/assets/images/cate03.svg', name: '展覽' },
-  { img: './src/assets/images/cate04.svg', name: '美食' },
-  { img: './src/assets/images/cate05.svg', name: '戶外' }
+  { img: cate01, name: '演出' },
+  { img: cate02, name: '聯誼' },
+  { img: cate03, name: '展覽' },
+  { img: cate04, name: '美食' },
+  { img: cate05, name: '戶外' }
 ])
 </script>
 

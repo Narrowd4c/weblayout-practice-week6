@@ -2,10 +2,17 @@
 import { ref } from 'vue'
 import HomeTitle from './HomeTitle.vue'
 import RightArrow from './RightArrow.vue'
+import event01 from '@/assets/images/event/01.jpg'
+import event02 from '@/assets/images/event/02.jpg'
+import event03 from '@/assets/images/event/03.jpg'
+import event04 from '@/assets/images/event/04.jpg'
+import event05 from '@/assets/images/event/05.jpg'
+import event06 from '@/assets/images/event/06.jpg'
+
 const events = ref([
   {
     date: '19 MAY 2023',
-    img: './src/assets/images/event/01.jpg',
+    img: event01,
     title: '邪典電影派對——房間',
     article:
       '你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，在電影播放的對著螢幕丟湯匙都...',
@@ -14,7 +21,7 @@ const events = ref([
   },
   {
     date: '23 MAY 2023',
-    img: './src/assets/images/event/02.jpg',
+    img: event02,
     title: '怪舞俱樂部',
     article:
       '覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...',
@@ -23,7 +30,7 @@ const events = ref([
   },
   {
     date: '30 MAY 2023',
-    img: './src/assets/images/event/03.jpg',
+    img: event03,
     title: '哈利波特馬拉松',
     article:
       '每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...',
@@ -32,7 +39,7 @@ const events = ref([
   },
   {
     date: '12 June 2023',
-    img: './src/assets/images/event/04.jpg',
+    img: event04,
     title: '皮卡丘排球大賽',
     article:
       '還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...',
@@ -41,7 +48,7 @@ const events = ref([
   },
   {
     date: '25 June 2023',
-    img: './src/assets/images/event/05.jpg',
+    img: event05,
     title: '酒精路跑',
     article:
       '身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。',
@@ -50,7 +57,7 @@ const events = ref([
   },
   {
     date: '9 July 2023',
-    img: './src/assets/images/event/06.jpg',
+    img: event06,
     title: '展覽——我的房間',
     article:
       '每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。',
@@ -83,7 +90,7 @@ const events = ref([
         <div class="border-y-3 flex items-center py-[10px] font-bold lg:py-3">
           <img
             class="me-1 h-auto w-6 object-contain"
-            src="@/assets/images/sparkler.png"
+            src="../assets/images/sparkler.png"
             alt="sparker"
           />
           <a href="#" class="hover:underline">{{ tag }}</a>

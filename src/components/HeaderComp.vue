@@ -3,7 +3,11 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
 const menuHidden = ref(true)
-
+function url() { 
+  let url = new URL(`../assets/images/`, import.meta.url).href
+  console.log(url)
+}
+url()
 </script>
 
 <template>

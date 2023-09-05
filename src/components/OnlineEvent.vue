@@ -10,7 +10,7 @@ const disabled = ref(false)
   <HomeTitle :title="'ONLINE'" :subtitle="'線上活動'"></HomeTitle>
   <section class="mb-15  md:flex gap-x-6">
     <div
-      class="mb-4 md:mb-0 min-h-[158px] w-full bg-[url('./src/assets/images/event/online.jpg')] bg-[center_30%] bg-no-repeat md:w-1/2"
+      class="mb-4 md:mb-0 min-h-[158px] w-full bg-[url('@/assets/images/event/online.jpg')] bg-[center_30%] bg-no-repeat md:w-1/2"
     ></div>
     <div class="w-full md:w-1/2">
       <h3 class="mb-2 md:mb-4  text-lg md:text-3xl font-bold">切特居批踢</h3>

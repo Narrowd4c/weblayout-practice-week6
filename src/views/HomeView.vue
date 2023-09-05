@@ -2,8 +2,8 @@
 import CategoryComp from '../components/CategoryComp.vue'
 import EventsComp from '../components/EventsComp.vue'
 import OnlineEvent from '../components/OnlineEvent.vue'
-import AlbumsComp from '@/components/AlbumsComp.vue';
-import ConcatComp from '@/components/ConcatComp.vue';
+import AlbumsComp from '../components/AlbumsComp.vue';
+import ConcatComp from '../components/ConcatComp.vue';
 </script>
 
 <template>

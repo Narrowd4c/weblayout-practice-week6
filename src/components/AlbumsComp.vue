@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import MarqueeComp from './MarqueeComp.vue'
 import { ref } from 'vue'
+import album01 from "@/assets/images/album/01.jpg"
+import album02 from "@/assets/images/album/02.jpg"
+import album03 from "@/assets/images/album/03.jpg"
+import album04 from "@/assets/images/album/04.jpg"
+
 
 const albums = ref([
-  { imgUrl: './src/assets/images/album/01.jpg', tag: '社群活動', title: '無聲派對-閉閉嘴dancing' },
-  { imgUrl: './src/assets/images/album/02.jpg', tag: '藝文活動', title: '拯救老店大作戰' },
-  { imgUrl: './src/assets/images/album/03.jpg', tag: '自我覺察', title: '內觀修行-部落篇' },
-  { imgUrl: './src/assets/images/album/04.jpg', tag: '聯誼活動', title: '賞櫻野餐' }
+  { imgUrl: album01, tag: '社群活動', title: '無聲派對-閉閉嘴dancing' },
+  { imgUrl: album02, tag: '藝文活動', title: '拯救老店大作戰' },
+  { imgUrl: album03, tag: '自我覺察', title: '內觀修行-部落篇' },
+  { imgUrl: album04, tag: '聯誼活動', title: '賞櫻野餐' }
 ])
 </script>
 
